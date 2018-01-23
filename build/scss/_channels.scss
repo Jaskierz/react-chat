@@ -1,0 +1,105 @@
+#myChat {
+  width: 100%;
+}
+
+.chat-channels {
+  background-color: $color-background-dark;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  color: $color-text-dark;
+  padding: .4rem .6rem;
+  overflow-y: auto;
+
+  > div {
+    padding: 0;
+  }
+
+  h5 {
+    cursor: pointer;
+    padding: .2rem .5rem;
+  }
+
+  .voice-channel, .text-channel {
+    word-break: break-all;
+  }
+
+  .voice-channel {
+    > div {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-left: .5rem;
+      padding: .3rem .5rem;
+    }
+
+    p {
+      font-size: .75rem;
+    }
+  }
+
+  .voice-channel > h5:hover {
+    color: $color-chat-text;
+  }
+
+  .text-channel > h5:hover {
+    border-radius: 2px;
+    background-color: $color-background-highlight;
+  }
+
+  .channel-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem;
+  }
+
+  .panel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    width: inherit;
+    padding: .4rem;
+    background-color: #242229;
+
+    .connected, .user-panel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .connected {
+      border-bottom: 2px solid $color-background-dark;
+      padding: .2rem 0;
+
+      >div {
+        width: 80%;
+      }
+
+      small{
+        font-size: .6rem;
+      }
+
+      p:first-child {
+        color: green;
+        font-size: .8rem;
+      }
+    }
+
+    .user-panel {
+      color: $color-chat-text;
+      padding: .5rem 0;
+      font-size: .8rem;
+
+      .user{
+        display: flex;
+        flex-direction: row;
+        padding: 0 .4rem;
+      }
+    }
+  }
+}

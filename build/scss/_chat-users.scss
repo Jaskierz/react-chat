@@ -1,0 +1,30 @@
+.active-users {
+  background-color: $color-background-dark;
+  width: 20%;
+  color: $color-text-dark;
+  padding: .2rem .6rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h4 {
+    padding: .4rem;
+  }
+
+  li {
+    list-style: none;
+    cursor: pointer;
+    padding: .1rem 1rem;
+  }
+
+  li > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  li:hover {
+    background-color: $color-background-highlight;
+  }
+}

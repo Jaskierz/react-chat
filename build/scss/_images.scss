@@ -1,0 +1,61 @@
+.add-channel-button {
+  background-image: url('https://www.bartoszbak.com/images/add-filled-cross-sign.png');
+  width: .5rem;
+  height: .5rem;
+
+  @include min($medium) {
+    width: .8rem;
+    height: .8rem;
+  }
+}
+
+.disconnect {
+  background-image: url('https://www.bartoszbak.com/images/end-call.png');
+}
+
+.logout {
+  background-image: url('https://www.bartoszbak.com/images/logout.png');
+}
+
+.disconnect, .logout {
+  margin-right: .4rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.image {
+  background-image: url('https://www.bartoszbak.com/images/audio-speaker.png');
+  margin-right: .4rem;
+  align-self: center;
+  display: none;
+  vertical-align: middle;
+
+  @include min($medium) {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.icon-big {
+  margin: .2rem .5rem .2rem .2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.icon-small {
+  margin-right: .4rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+.image, .add-channel-button, .disconnect, .icon-small, .icon-big, .logout {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
